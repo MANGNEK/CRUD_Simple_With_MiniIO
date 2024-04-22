@@ -1,0 +1,6 @@
+@CRUD_With_MiniIO_HostAddress = http://localhost:5288
+
+GET {{CRUD_With_MiniIO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,7 +1,7 @@
-from mcr.microsoft.com/dotnet/aspnet/:8.0 as base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 MAINTAINER trungNguyen<MANGNEK>
 WORKDIR /app
-FROM mrc.microsoft.com/dotnet/sdk/:8.0  As build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
 RUN dotnet restore "crud_with_MiniIO/crud_with_MiniIO.csproj"

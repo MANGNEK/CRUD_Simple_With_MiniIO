@@ -1,6 +1,6 @@
 version: '0.1'
 services:
-  simple-Crud-MiniIO:
+  simple-crud-miniio:
     build:
       context: .
       dockerfile: Dockerfile

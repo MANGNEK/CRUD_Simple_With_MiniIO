@@ -1,0 +1,9 @@
+version: '0.1'
+services:
+  simple-Crud-MiniIO:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9601:8181"
+    restart : always

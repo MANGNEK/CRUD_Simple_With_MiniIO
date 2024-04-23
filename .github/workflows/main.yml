@@ -1,17 +1,13 @@
 name: CI/CD_Action
-on: 
+on:
   push:
     branches: ["main"]
 jobs:
-
   build:
     runs-on: self-hosted
     steps:
-    -name: check_head
+    - name: checkhead
      run: |
           echo "Check Ok!!"
           echo "Action Will Run"
-    -name: build and setup
-     uses: actions/checkout@v3
-     with: 
-       dotnet
+
